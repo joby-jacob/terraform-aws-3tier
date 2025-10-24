@@ -1,0 +1,9 @@
+# Initialize
+terraform init
+
+# DEV
+terraform plan  -var-file=environments/dev.tfvars
+terraform apply -var-file=environments/dev.tfvars
+
+# Outputs
+terraform output alb_dns_name
